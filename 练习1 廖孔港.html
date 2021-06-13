@@ -1,0 +1,38 @@
+<!DOCTYPE >
+<html>
+<head>
+	<style>
+	button{
+		background-color: black;
+		color: white;
+		text-align: center;
+		font-size: larger;
+		width: 150px;
+		position: 50% 20%;
+	  }
+</style>
+
+</head>
+
+<body><h1>Practice 1</h1> 
+
+<button onclick="myFunction()">Add Something</button>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = "Before：<br>" + fruits;
+function myFunction() {
+	fruits.push('Lemon');
+	fruits.push('Pinapple');
+	fruits.sort((a,b)=>{
+  		if(a>=b){return -1;}
+  		else{return 1}
+	});
+	document.getElementById("demo2").innerHTML = "After：<br>" + fruits;
+}
+</script>
+</body>
+</html>
